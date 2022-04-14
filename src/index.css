@@ -1,13 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 body {
+  background-color: rgb(253, 253, 253);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Mali', cursive;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h3 {
+  background: -webkit-linear-gradient(rgb(241, 37, 149), rgb(227, 37, 241), rgb(37, 193, 255), rgb(37, 204, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 32px;
+  padding: 0;
+  margin: 0;
+}
+
+h5 {
+  color: rgb(172, 172, 172);
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  padding-top: 16px;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.box {
+  height: 10px;
+  width: 10px;
+  border: 0.5px solid rgb(233, 233, 233);
+}
+
+.paint--color {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.paints {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.paints > button, .paint--color > button {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+}
+
+.paint--red {
+  background: red;
+}
+
+.paint--red-orange {
+  background: rgb(255, 77, 0);
+}
+
+.paint--orange {
+  background: rgb(255, 119, 0);
+}
+
+.paint--yellow-orange {
+  background: rgb(255, 162, 0);
+}
+
+.paint--yellow {
+  background: rgb(255, 217, 0);
+}
+
+.paint--yellow-green {
+  background: rgb(187, 255, 0);
+}
+
+.paint--green {
+  background: rgb(0, 255, 38);
+}
+
+.paint--green-blue {
+  background: rgb(0, 221, 255);
+}
+
+.paint--blue {
+  background: rgb(0, 136, 255);
+}
+
+.paint--blue-purple {
+  background: rgb(85, 0, 255);
+}
+
+.paint--purple-pink {
+  background: rgb(200, 0, 255);
+}
+
+.paint--pink {
+  background: rgb(255, 0, 217);
+}
+
+.paint--pink-red {
+  background: rgb(255, 0, 128);
+}
+
+.paint--white {
+  background: rgb(243, 243, 243);
+}
+
+.paint--gray {
+  background: rgb(155, 155, 155);
+}
+
+.paint--black {
+  background: rgb(0, 0, 0);
+}
+
+.paint--tan {
+  background: rgb(255, 218, 185);
+}
+
+.paint--brown {
+  background: rgb(120, 67, 20);
 }
